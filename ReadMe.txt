@@ -1,9 +1,3 @@
-# OnePage-MyFirstWebDesign
-This was my first web design that I developed while internship at DevelopersFlow.
-
-I wrote the following Note in ReadMe back then. :D
-////////////////////////////////////////////////////////////////////////////////
-
 Hey there !!
 
 OnePage is designed purely with HTML5 & CSS3 & minimum jquery (just for sliding effect).
@@ -27,5 +21,3 @@ X----------X----------X------------X--------------X-------------X--------------X
 Contact me for any further questions.
 
 facebook.com/founderofWSC
-
-///////////////////////////////////////////////////////////////////////////////////

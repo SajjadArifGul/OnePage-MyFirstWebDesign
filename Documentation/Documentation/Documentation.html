@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Change Title of Page -->
+	<title>One Page : Documentation</title>
+
+	<!-- Nato Sans Fonts from Google | Change it with desired font style : description in documentation-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'/>
+
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+
+	<!--Jquery library from Google -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<!--Jquery for smooth slider -->
+	<script type="text/javascript" src="../images/smoothslider.js"></script>
+
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+
+		font-family: 'Open Sans Condensed', sans-serif;
+		
+
+		text-align: center;
+	}
+
+	body{
+		width: 100%;
+		background-color: #272822;
+	}
+
+	#home{
+		width: 1100px;
+		margin: auto;
+		color: #000000;
+	}
+
+	#home h1{
+	}
+
+
+	.top-area{
+		width: 100%;
+		height: 100vh;
+
+		background-image: url(../images/topBg.jpg);
+		background-attachment: fixed;
+		background-position-x: 50%;
+		background-position-y: 50%;
+		background-size: cover;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-origin: initial;
+		background-clip: initial;
+		background-color: #222;
+	}
+
+	#cover-area{
+		padding-top: 90px;
+	}
+
+	.nav-bar{
+		padding-top: 5px;
+		width:1100px;
+		height:80px;
+
+		position: fixed;
+
+
+		background-color: #ffffff;
+
+		border-bottom: 1px solid #999999;
+
+		opacity: 0.8;
+	}
+
+	.web-title{
+		float: left;
+		color: #000000;
+		width: 35%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.web-title h1{
+		line-height: 1;
+		text-align: left;
+	}
+
+	.web-title a{
+		text-decoration: none;
+		color: #000000;
+	}
+
+	.web-title a:hover{
+		color: #428bca;
+	}
+
+
+	.web-title img{
+		display: none;
+		opacity: 1;
+		height: 100%;
+	}
+
+	.web-title img:hover{
+		cursor: pointer;
+	}
+
+	.menu{
+		float: right;
+
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+	.menu ul{
+		padding-top: 5px;
+	}
+
+	.menu li{
+		display: inline;
+
+		font-size: 20px;
+	}
+
+	.menu a{
+		color: #000000;
+		text-decoration: none;
+		padding: 10px;
+	}
+
+	.menu a:hover {
+		color: #ffffff;
+		background-color: #428bca;
+	}
+
+	.logo{
+		width: 400px;
+		height: 300px;
+
+		margin: auto;
+
+	}
+
+	.logo img{
+		width: 400px;
+		height: 300px;
+	}
+
+	.title{
+		margin-top: 10px;
+		color: #ffffff;
+		font-weight: normal;
+		text-align: center;
+		font-size: 50px;
+		line-height: 80px;
+	}
+	.description{
+		margin-top: 20px;
+		color: #ffffff;
+		font-weight: normal;
+		text-align: center;
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.down{
+		width: 100px;
+		height:100px;
+		margin: auto;
+		margin-top: 10px;
+	}
+
+	.down img{
+		width: auto;
+		height: auto;
+	}
+
+	.down img:hover{
+		cursor: pointer;
+		background-color: #428bca;
+	}
+
+	code{
+		font-style: italic;
+		text-decoration: underline;
+		color: #428bca;
+	}
+
+	#socializer{
+		width: 100%;
+		height: 300px;
+		background-color: #000000;
+		color: #ffffff;
+		margin: auto;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	#socializer img{
+		float: left;
+	}
+
+	.social-container{
+		margin-left: 38%;
+	}
+
+	#facebook img:hover{
+background-color:#3b5998;
+cursor: pointer;
+}
+#twitter img:hover{
+background-color:#9AE4E8;
+cursor: pointer;
+}
+#googleplus img:hover{
+background-color:#d34836;
+cursor: pointer;
+}
+#email img:hover{
+background-color:orange;
+cursor: pointer;
+}
+
+	.copy-container p{
+width:100%;
+		padding-top: 50px;
+		text-align: center;
+		font-size: 20px;
+float:left;
+	}
+
+	.copy-container a{
+text-decoration: none;
+color : #428bca;
+	}
+
+	.question{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		color: #ffffff;
+	}
+
+	</style>
+
+</head>
+<body>
+	<div id='home'>
+        <div class='top-area'>
+			<div class='nav-bar'>
+				<div class='web-title'>
+					<!--Change Name of Webpage -->
+					<a href='#home'><h1>One Page<h1></a>
+					<!--Change logo of webpage in navigation bar -->
+                    <a href='#home'><img src='../images/navlogo.png'/></a>
+				</div>
+				<div class='menu'>
+					<ul>
+						<!--Change these Tags with your own menu items -->
+						<li><a href='#topPortion'>Cover</a></li>
+						<li><a href='#serPortion'>Services</a></li>
+						<li><a href='#cliPortion'>Clients</a></li>
+						<li><a href='#qutPortion'>Quote</a></li>
+						<li><a href='#locPortion'>Locations</a></li>
+						<li><a href='#fedPortion'>Feedback</a></li>
+						<li><a href='#visPortion'>Visit</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id='cover-area'>
+				<div class='logo'>
+				  <!--Main Logo on Opening of Page | change it with your own -->
+                  <img src='../images/mainlogo.png'/>
+				</div>
+				<div class='title'>
+					<!--Change Main Title on Opening Page -->
+					<h1>One Page</h1>
+				</div>
+				<div class='description'>
+					<!--Add your motto here -->
+					<p>Template Documentation</p>
+				</div>
+				<div class='down'>
+                  <a href='#services'><img src='../images/down.png'/></a>
+				</div>
+			</div>
+		</div>
+		<div id="topPortion"></div>
+		<div class='question'>
+			<h1>How to Change title of Web Page</h1>
+			<p>Search for <code>Change Title of Page</code> in webpage.html. Like below :<br />
+			<img src="..\images\q3.png"><br />
+			& change it with your own title.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change font of Web Page</h1>
+			<p>Search for <code>Favicon of Webpage </code> in webpage.html. Like below :<br />
+			<img src="..\images\q1.png"><br />
+			& change it with your own.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change favicon of Web Page</h1>
+			<p>Search for <code>Favicon of Webpage </code> in webpage.html. Like below :<br />
+			<img src="..\images\q2.png"><br />
+			& change it with your own.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change Heading or Logo of Web Page in Navigation Bar</h1>
+			<p>Search for <code>Change Name of Webpage</code> in webpage.html. Like below :<br />
+			<img src="..\images\q4.png"><br />
+			& change it with your own Heading or Logo.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change Menu items of Navigation Bar in web Page</h1>
+			<p>Search for <code>Change these Tags</code> in webpage.html. Like below :<br />
+			<img src="..\images\q5.png"><br />
+			& change it with your own items.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change Main Openning Logo in web Page</h1>
+			<p>Search for <code>Change Name of Webpage</code> in webpage.html. Like below :<br />
+			<img src="..\images\q6.png"><br />
+			& change it with your own logo.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change Title & Description below Openning Logo in web Page</h1>
+			<p>Search for <code>Change Main Title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q7.png"><br />
+			& change it with your own title.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change background Image of Openning Portion</h1>
+			<p>Search for <code>background-image: url(../images/topBg.jpg);</code> in your CSS folder->styles.css. Like below :<br />
+			<img src="..\images\q10.png"><br />
+			& change it with your own image.
+			</p>
+		</div>
+		<hr />	
+		<div id="serPortion"></div>
+		<div class='question'>
+			<h1>How to Change Title & Description of Services Portion in web Page</h1>
+			<p>Search for <code>2nd Portion title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q8.png"><br />
+			& change it with your own title & description.
+			</p>
+		</div>
+		<hr />	
+		<div class='question'>
+			<h1>How to Change Title & Description of Each Services in Services Portion</h1>
+			<p>Search for <code>Service 1 heading </code> in webpage.html. Like below :<br />
+			<img src="..\images\q9.png"><br />
+			& change it with your own title & description. Same for All services divs.
+			</p>
+		</div>
+		<hr />	
+		<div id="cliPortion"></div>
+		<div class='question'>
+			<h1>How to Change Title & Description of Clients Portion</h1>
+			<p>Search for <code>portion 3 openning title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q11.png"><br />
+			& change it with your own title & description.
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change Clients Detail in Clients Portion</h1>
+			<p>Search for <code>client 1 details</code> in webpage.html. Like below :<br />
+			<img src="..\images\q12.png"><br />
+			& change it with your own client description. Similarly for other 2 clients will be done. 
+			</p>
+		</div>
+		<hr />	
+		<div id="qutPortion"></div>
+		<div class='question'>
+			<h1>How to Change quotation in Quotation's Portion</h1>
+			<p>Search for <code>quotation : portion 4</code> in webpage.html. Like below :<br />
+			<img src="..\images\q13.png"><br />
+			& change it with your own client's view or quote. 
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change background image of Quotation's Portion</h1>
+			<p>Search for <code>background-image: url(../images/clientBg.jpg);</code> in your CSS folder->styles.css. Like below :<br />
+			<img src="..\images\q14.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />
+		<div id="locPortion"></div>
+		<div class='question'>
+			<h1>How to Change Title & Description of Locations Portion</h1>
+			<p>Search for <code>location : portion 5 openning title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q15.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />		
+		<div class='question'>
+			<h1>How to Change Details of Regions in Locations Portion</h1>
+			<p>Search for <code>regions 1 details</code> in webpage.html. Like below :<br />
+			<img src="..\images\q16.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />	
+		<div class='question'>
+			<h1>How to Change Title & Description of Contacts Portion</h1>
+			<p>Search for <code>portion 6 openning title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q17.png"><br />
+			& change it with your own . & similarly for details of phone number & website , see it directly below above code.
+			</p>
+		</div>
+		<hr />	
+		<div id="fedPortion"></div>
+		<div class='question'>
+			<h1>How to Change Title & Description of Feedbacks Portion</h1>
+			<p>Search for <code>portion 7 openning title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q18.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />	
+		<div class='question'>
+			<h1>How to Change forms Action on Feedbacks Portion</h1>
+			<p>Search for <code>form Action</code> in webpage.html. Like below :<br />
+			<img src="..\images\q19.png"><br />
+			& change <code>action='http://www.example.com/submit.php'</code> with your own . 
+			</p>
+		</div>
+		<hr />
+		<div id="visPortion"></div>
+		<div class='question'>
+			<h1>How to Change 'Get in Touch with Us' title in footer Portion</h1>
+			<p>Search for <code>footer title</code> in webpage.html. Like below :<br />
+			<img src="..\images\q20.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />
+		<div class='question'>
+			<h1>How to Change Details of Phone , Address & Email in footer Portion</h1>
+			<p>Search for <code>phone number</code> in webpage.html. Like below :<br />
+			<img src="..\images\q21.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />		
+		<div class='question'>
+			<h1>How to Change Social Links in footer Portion</h1>
+			<p>Search for <code>facebook link</code> in webpage.html. Like below :<br />
+			<img src="..\images\q22.png"><br />
+			& change it with your own . 
+			</p>
+		</div>
+		<hr />		
+	</div>
+	<div id="socializer">
+		<div id="about-me">
+			<h1>DevelopersFlow</h1>
+			<p>If you still have some problems in this HTML5 document, please contact me using some of the following options.</p>
+			<div class="social-container">
+			<div id='facebook'><a href='https://facebook.com/founderofWSC' target="_blank"><img src='../images/facebook.png'/></a></div>
+				<!-- twitter link | change with your own if needed -->
+			<div id='twitter'><a href='https://twitter.com/csharpens' target="_blank"><img src='../images/twitter.png'/></a></div>
+				<!-- googleplus link| change with your own if needed -->
+			<div id='googleplus'><a href='https://plus.google.com/+csharpens' target="_blank"><img src='../images/googleplus.png'/></a></div>
+
+			<div id='email'><a href='mailto:quickmoon@rocketmail.com' ><img src='../images/email.png'/></a></div>
+			</div>
+
+			<div class='copy-container'>
+				<!-- copyright portion | change with your own if needed -->
+			<p>Copyright &#169; 2014 &#183; <a href='http://developersflow.com' id='credit' title='Developers'>DevelopersFlow</a> &#174;</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
